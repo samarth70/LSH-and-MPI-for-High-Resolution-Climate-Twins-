@@ -3,3 +3,6 @@ Course Group Project for Big Data Analysis (MSDS)
 
 
 This project details the design and implementation of the "Climate Twin" project, a high-resolution system built to identify historical climate analogues: cities sharing near-identical annual thermal fingerprints by processing millions of rows of temperature data. To address the computational impossibility of comparing every data point, the system applies Locality Sensitive Hashing (LSH) and MinHashing to compress and index complex twelve-month temperature sets. Key methodological innovations include high-resolution temperature bucketing and temporal shingling to ensure that identified matches maintain accurate seasonality and climatological relevance. The project utilizes a novel distributed architecture called "The Kraken Shuffle," which leverages MPI All-to-All communication to distribute LSH buckets across worker nodes, thereby eliminating master node memory constraints during the candidate search phase. This successful implementation yields thousands of strict matches (over $80%$ similarity), enabling researchers to visualize climate zone migration and "Climate Teleportation" across the globe.
+
+Project Overview Demo
+https://drive.google.com/file/d/1dQGyLRuBdxcc9EMMqVUl9IFXAtswh46h/view?usp=sharing
